@@ -6,7 +6,7 @@ def f(abc):
 	# Z = (A'+C)(A+C+B)B' = B'C	
 	# return (not A or C) and (A or C or B) and not B
 	
-	# Z = (A'B'C')+(A'B'C)+(A'BC')+(AB'C')+(ABC')+(ABC)	
+	# Z = (A'B'C')+(A'B'C)+(A'BC')+(AB'C')+(ABC')+(ABC)	= A'B'+AB+C'
 	r = not A and not B and not C
 	r = r or (not A and not B and C)
 	r = r or (not A and B and not C)
